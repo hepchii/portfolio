@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home" aria-label="Your Name portfolio home">
+        <span class="logo-mark" aria-hidden="true">OK</span>
+        <span>Precious Kharbani</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy section">
+        <p class="eyebrow">Frontend Developer</p>
+        <h1>Building clean digital experiences for modern brands.</h1>
+        <p>
+          I design and develop responsive websites with strong layouts, clear
+          content, and polished details that work across every device.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="projects.html">View Work</a>
+          <a class="button" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image section">
+        <img src="assets/one_MU_F_v4.png" alt="Precious Kharbani wearing a black graphic t-shirt">
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>A focused developer who keeps things useful and polished.</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-media-wrap">
+          <figure class="about-media">
+            <img src="assets/one_about_v1.jpeg" alt="Portrait of Precious Kharbani" class="about-image">
+          </figure>
+          <div class="about-caption">
+            <strong>Precious Kharbani</strong>
+            <span>Frontend Developer</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="about-intro">
+            I enjoy turning ideas into websites that look good, load fast, and work
+            smoothly on every screen. My work blends clean structure, accessible
+            markup, and visual style that supports the content.
+          </p>
+
+          <div class="about-highlights">
+            <div>
+              <h3>Responsive by default</h3>
+              <p>Layouts that adapt cleanly from desktop to mobile.</p>
+            </div>
+            <div>
+              <h3>Simple structure</h3>
+              <p>Reusable sections and readable markup that stay easy to maintain.</p>
+            </div>
+            <div>
+              <h3>Polished details</h3>
+              <p>Balanced spacing, subtle motion, and clear visual hierarchy.</p>
+            </div>
+          </div>
+
+          <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive UI</span>
+            <span>Web Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/Business Landing Page.png" alt="Business Landing Page screenshot" loading="lazy" decoding="async">
+          </div>
+          <div class="project-content">
+            <p class="project-tag">Website</p>
+            <h3>Business Landing Page</h3>
+            <p>A responsive landing page with a clear layout, strong call to action, and fast mobile experience.</p>
+            <a href="projects.html">View details</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/Dashboard Interface.png" alt="Dashboard Interface screenshot" loading="lazy" decoding="async">
+          </div>
+          <div class="project-content">
+            <p class="project-tag">UI Design</p>
+            <h3>Dashboard Interface</h3>
+            <p>A neat dashboard concept focused on readable data, simple navigation, and reusable components.</p>
+            <a href="projects.html">View details</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/Portfolio Template.png" alt="Portfolio Template screenshot" loading="lazy" decoding="async">
+          </div>
+          <div class="project-content">
+            <p class="project-tag">Frontend</p>
+            <h3>Portfolio Template</h3>
+            <p>A clean personal portfolio structure with smooth sections and device-friendly spacing.</p>
+            <a href="projects.html">View details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something simple and strong.</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-details">
+          <p>
+            Send a short message about your project, timeline, or idea. I will
+            keep the first reply clear and useful.
+          </p>
+          <div class="contact-grid">
+            <a href="mailto:wanderwave18@gmail.com">wanderwave18@gmail.com</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80">
+            <small class="field-error" data-error-for="name"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="120">
+            <small class="field-error" data-error-for="email"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000"></textarea>
+            <small class="field-error" data-error-for="message"></small>
+          </div>
+
+          <button class="button primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="social-links">
+        <a class="social-link" href="https://www.linkedin.com/in/wander-wave-84156a3a0/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.9H3.64v10.6h3.3V8.9ZM5.29 7.45a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8ZM20.35 13.42c0-3.2-1.71-4.68-3.99-4.68a3.43 3.43 0 0 0-3.1 1.7V8.9h-3.17v10.6h3.3v-5.24c0-1.38.26-2.72 1.97-2.72 1.68 0 1.7 1.58 1.7 2.8v5.16h3.29v-6.08Z"></path>
+          </svg>
+        </a>
+        <a class="social-link" href="https://github.com/hepchii" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.25a9.75 9.75 0 0 0-3.08 19c.49.09.67-.21.67-.47v-1.7c-2.73.59-3.31-1.17-3.31-1.17-.44-1.13-1.09-1.43-1.09-1.43-.89-.61.07-.6.07-.6.99.07 1.51 1.02 1.51 1.02.88 1.5 2.3 1.07 2.86.82.09-.64.34-1.07.62-1.31-2.18-.25-4.47-1.09-4.47-4.85 0-1.07.38-1.95 1.01-2.63-.1-.25-.44-1.25.1-2.6 0 0 .83-.26 2.69 1a9.28 9.28 0 0 1 4.9 0c1.86-1.26 2.68-1 2.68-1 .54 1.35.2 2.35.1 2.6.63.68 1.01 1.56 1.01 2.63 0 3.77-2.3 4.59-4.49 4.84.35.3.67.91.67 1.84v2.73c0 .26.18.57.68.47A9.75 9.75 0 0 0 12 2.25Z"></path>
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/hep_chii/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.8 2.75h8.4a5.06 5.06 0 0 1 5.05 5.05v8.4a5.06 5.06 0 0 1-5.05 5.05H7.8a5.06 5.06 0 0 1-5.05-5.05V7.8A5.06 5.06 0 0 1 7.8 2.75Zm0 1.8A3.26 3.26 0 0 0 4.55 7.8v8.4a3.26 3.26 0 0 0 3.25 3.25h8.4a3.26 3.26 0 0 0 3.25-3.25V7.8a3.26 3.26 0 0 0-3.25-3.25H7.8Zm4.2 3.28a4.17 4.17 0 1 1 0 8.34 4.17 4.17 0 0 1 0-8.34Zm0 1.8a2.37 2.37 0 1 0 0 4.74 2.37 2.37 0 0 0 0-4.74Zm4.43-2.73a.97.97 0 1 1 0 1.94.97.97 0 0 1 0-1.94Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
